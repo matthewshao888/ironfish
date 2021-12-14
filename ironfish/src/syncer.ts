@@ -62,7 +62,7 @@ export class Syncer {
     this.stopping = null
     this.cancelLoop = null
 
-    this.blocksPerMessage = options.blocksPerMessage ?? REQUEST_BLOCKS_PER_MESSAGE
+    this.blocksPerMessage = 5; //options.blocksPerMessage ?? REQUEST_BLOCKS_PER_MESSAGE
   }
 
   async start(): Promise<void> {
